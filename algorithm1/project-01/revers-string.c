@@ -9,13 +9,19 @@
 // }
 int main() {
     // string_reverse() ; 
-    char str[20] = "hello" ; 
-    int len =  strlen(str) ; 
-    for (int i = len -1 ;i>=0 ;i--){
-        printf("%c" , str[i]) ; 
-    }
+    char str[] = "hello" ; 
+    int len =  0 ;
+    // for (int i = len -1 ;i>=0 ;i--){
+    //     printf("%c" , str[i]) ; 
+    // }
     
-    return 0 ;
-
+    // return 0 ;
+     while (str[len]  != '\0')  {
+        len++ ; 
+     }
+     for (int  i = len -1 ; i>=0 ;i--){
+        printf("%c" , str[i]) ; 
+     }
+     return 0 ; 
 
 }
